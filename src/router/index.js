@@ -54,7 +54,22 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
-
+  {
+    path: '/echarts',
+    component: Layout,
+    redirect: '/echarts',
+    children: [
+      {
+        path: '',
+        name: 'echartsExample',
+        component: () => import('@/views/Echarts/index'),
+        meta: {
+          title: 'echarts图表', 
+          icon: 'el-icon-s-help'
+        },
+      }
+    ]
+  },
   {
     path: '/example',
     component: Layout,
