@@ -1,22 +1,32 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import Cookies from 'js-cookie'
-import elementEnLocale from 'element-ui/lib/locale/lang/en' // element-ui lang
-import elementZhLocale from 'element-ui/lib/locale/lang/zh-CN'// element-ui lang
-import elementEsLocale from 'element-ui/lib/locale/lang/es'// element-ui lang
-import elementJaLocale from 'element-ui/lib/locale/lang/ja'// element-ui lang
+import elementEnLocale from 'element-ui/lib/locale/lang/en' // 英语
+import elementZhLocale from 'element-ui/lib/locale/lang/zh-CN'// 中文
+import elementKoLocale from 'element-ui/lib/locale/lang/ko'// 韩语
+import elementJaLocale from 'element-ui/lib/locale/lang/ja'// 日语
+import ja from './ja'
+import ko from './ko'
+import zh from './zh'
+import en from './en'
+
+
 Vue.use(VueI18n)
 const messages = {
   en: {
+    ...en,
     ...elementEnLocale
   },
   zh: {
+    ...zh,
     ...elementZhLocale
   },
-  es: {
-    ...elementEsLocale
+  ko: {
+    ...ko,
+    ...elementKoLocale
   },
   ja: {
+    ...ja,
     ...elementJaLocale
   }
 }

@@ -1,27 +1,25 @@
 <template>
   <div class="echarts-container">
-    < 测试
-     <<div class="echarts-box">
-        <line-stack-echarts />
-     </div>
-     <div class="echarts-box">
-       <funnel-chart />
-     </div>
-     <div class="echarts-box">
-        <bar-echarts />
-     </div>
-     <div class="echarts-box">
-       <pie-chart />
-     </div> 
+    <div class="echarts-box">
+      <line-stack-echarts />
+    </div>
+    <div class="echarts-box">
+      <funnel-chart />
+    </div>
+    <div class="echarts-box">
+      <bar-echarts />
+    </div>
+    <div class="echarts-box">
+      <pie-chart />
+    </div>
   </div>
 </template>
 
 <script>
-import LineStackEcharts from './LineStackEcharts'
-import BarEcharts from './BarEcharts'
-import PieChart from './PieChart'
-import FunnelChart from './FunnelChart'
-
+import LineStackEcharts from "./LineStackEcharts";
+import BarEcharts from "./BarEcharts";
+import PieChart from "./PieChart";
+import FunnelChart from "./FunnelChart";
 
 export default {
   name: "Echarts",
@@ -31,7 +29,7 @@ export default {
     PieChart,
     FunnelChart
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
